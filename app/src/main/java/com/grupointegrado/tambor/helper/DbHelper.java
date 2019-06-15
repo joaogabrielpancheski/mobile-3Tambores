@@ -23,7 +23,7 @@ public class DbHelper extends SQLiteOpenHelper {
         String sqlPassadas = "CREATE TABLE IF NOT EXISTS " + TABELA_PASSADAS +
                 " (id_pass INTEGER PRIMARY KEY AUTOINCREMENT, tempo DOUBLE," +
                 "com_id INTEGER, FOREIGN KEY(com_id) REFERENCES " + TABELA_COMPETIDORES +
-                " (id_com));";
+                " (id_com) ON DELETE CASCADE);";
 
         try {
             db.execSQL( sqlCompetidores );

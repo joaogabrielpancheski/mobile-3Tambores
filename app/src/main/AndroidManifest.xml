@@ -4,29 +4,31 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher_tambor"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_tambor_round"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".activity.PassadaActivity"
-            android:label="Ranking das passadas"></activity>
+            android:label="Ranking das passadas"
+            android:screenOrientation="portrait"></activity>
         <activity android:name=".activity.AdicionarPassadaActivity"
-            android:label="Adicionar tempo da passada" />
+            android:label="Adicionar tempo da passada"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.AdicionarCompetidorActivity"
-            android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
-            android:label="Adicionar competidor" />
+            android:label="Adicionar competidor"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.CompetidorActivity"
-            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
-            android:label="Competidores" />
+            android:label="Competidores"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".activity.MainActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

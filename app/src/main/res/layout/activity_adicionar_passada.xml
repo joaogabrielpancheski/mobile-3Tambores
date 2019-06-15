@@ -24,7 +24,8 @@
             android:id="@+id/textPassada"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Informe o tempo da passada" />
+            android:hint="Informe o tempo da passada"
+            android:inputType="numberDecimal" />
     </android.support.design.widget.TextInputLayout>
 
 </android.support.constraint.ConstraintLayout>
